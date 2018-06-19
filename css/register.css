@@ -1,0 +1,78 @@
+.login-boxtitle{
+	width: 1000px;
+	height: 60px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.res-banner{
+	width: 100%;
+	height: 600px;
+	background-color: #27A9E3;
+}
+.res-main{
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login-banner-bg{
+	width: 300px;
+	height: 300px;
+	/*border: 1px solid red;*/
+}
+.login-box{
+	width: 550px;
+	height: 550px;
+	display: flex;
+	background-color: rgba(255,255,255,0.3);
+	align-items: center;
+	justify-content: center;
+}
+.login-box p{
+	width: 350px;
+	height: 70px;
+	/*border: 1px solid red; */
+}
+.login-box p:first-child{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+/*.login-box form .logintitle{
+	width: 350px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid black; 
+}*/
+.login-box form p:nth-child(6){
+	width: 350px;
+	height: 50px;
+	/*border: 1px solid red; */
+}
+.login-box input{
+	width: 350px;
+	height: 40px;
+	outline: none;
+	border-radius: 5px;
+	/*margin-right: 10px;*/
+	text-indent: 10px;
+	border: 1px solid #DCDEE0;
+}
+.login-box p span{
+	margin-left: 10px;
+}
+.login-box input[type='button']{
+	background-color: #27A9E3;
+	border: none;
+}
+.login-box input[type='radio']{
+	width: 15px;
+	height: 15px;
+	margin-left: 20px;
+}
+.login-box a{
+	color: blue;
+}

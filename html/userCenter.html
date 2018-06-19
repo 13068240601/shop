@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/userCenter.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/jquery-ui-i18n.js"></script>
+<script src="../js/distpicker.data.js"></script>
+<script src="../js/distpicker.js"></script>
+<script src="../js/main.js"></script>
+<body>
+	<div class="header"></div>
+	<div class="mask">
+		<div class="home_update">
+			<form method="post" action="../php/home_updata.php" id="home_update" enctype="multipart/form-data">
+				<p><span>用户头像:</span><input type="file" name="uphoto" id="uphoto"></p>
+				<p><span>用户昵称:</span><input type="text" name="nickname"></p>
+				<p><span>个性签名:</span><textarea name="umood" id="user_sign" cols="28" rows="5" placeholder="字数限制在125字以内"></textarea></p>
+				<p>
+					<input type="button" class="update_btn" value="提交">
+					<input type="button" class="home_close" value="关闭">
+				</p>
+			</form>
+		</div>
+		<!-- <div class="site_update ">
+			<form method="post" enctype="multipart/form-data">
+				<p><span>收件人:</span><input type="text" name="name"></p>
+				<p><span>地址</span><input type="text" ></p>
+				<p><span>详细地址:</span><textarea name="user_sign" id="user_sign" cols="28" rows="5"></textarea></p>
+				<p><span>邮编</span><input type="text" ></p>
+				<p><span>收件人电话:</span><input type="text" ></p>
+				<p>
+					<input type="button" value="修改">
+					<input type="button" value="关闭">
+				</p>
+			</form>
+		</div> -->
+		<div class="user_detail_updata">
+			<table class="u_list">
+				<tr>
+					<td>真实姓名:</td>
+					<td><input type="text" name="uname" class="uname"></td>
+				</tr>
+				<tr>
+					<td>性别: </td>
+					<td>
+						<input type="radio" name="sex" value="1">男&nbsp;
+						<input type="radio" name="sex" value="0">女
+					</td>
+				</tr>
+				<tr>
+					<td>生日:</td>
+					<td><input id="birth" type="date"></p></td>
+				</tr>
+				<tr>
+					<td>地址:</td>
+					<td class="distpicker_work">
+						<div data-toggle="distpicker">
+							<select id="eprovinceName" data-province="广东省" name="provinceName"></select>
+							<select id="ecityName" data-city="广州市" name="cityName"></select>
+							<select id="edistrictName" data-district="天河区" name="districtName"></select>
+							<textarea name="listName" id="distpicker_list" cols="45" rows="3"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>家乡:</td>
+					<td class="distpicker_home">
+						<div data-toggle="distpicker">
+							<select id="eprovinceName" data-province="广东省" name="provinceName"></select>
+							<select id="ecityName" data-city="广州市" name="cityName"></select>
+							<select id="edistrictName" data-district="天河区" name="districtName"></select><br>
+							<textarea name="listName" id="distpicker_list" cols="45" rows="3"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button class="btn_u_list">提交</button>
+						<button class="btn_u_close">关闭</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="main">
+
+		<div class="top_nav" id="top_nav">
+			<ul>
+				<li><a href="#">用户首页</a></li>
+				<li><a href="#">通用设置</a></li>
+				<li><a href="#">安全设置</a></li>
+				<li><a href="#">网站提醒</a></li>
+			</ul>
+		</div>
+		<div class="userHome floor">
+			<div class="home_top">
+				<div class="change">
+					<a href="#"><img src="../img/change.png" alt=""></a>
+				</div>
+				<div class="photo">
+					<img src="#" alt="">
+				</div>
+				<div class="user_info">
+					<div class="nickname">
+						用户昵称:<span></span>
+					</div>
+					<div class="user_rank">
+						会员等级:<span></span>
+					</div>
+					<div class="user_sign">
+						个性签名:<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="indent">
+				<div class="indent_top">
+					<h3>订单管理</h3>
+					<h4><a href="#">更多</a></h4>
+				</div>
+				<ul class="indent_title">
+					<li>订单号</li>
+					<li>订单详情</li>
+				</ul>
+				<div class="indent_info">
+					<ul>
+						<li>0000001</li>
+						<li>
+							<a href="#">小米(MI)Air 12.5英寸全金属超轻薄笔记本(Core M-7Y30 4G 128G固态硬盘 全高清屏 背光键盘 Win10)银</a>
+							</br>
+							<span class="spec">规格:12.5寸银色 128g</span>
+							<span class="num">数量:1</span>
+							<span class="num">单价:￥4999.00</span>
+							<span class="sum">总价:￥4999.00</span>
+						</li>
+					</ul>
+					<ul>
+						<li>0000001</li>
+						<li>
+							<a href="#">小米(MI)Air 12.5英寸全金属超轻薄笔记本(Core M-7Y30 4G 128G固态硬盘 全高清屏 背光键盘 Win10)银</a>
+							</br>
+							<span class="spec">规格:12.5寸银色 128g</span>
+							<span class="num">数量:1</span>
+							<span class="num">单价:￥4999.00</span>
+							<span class="sum">总价:￥4999.00</span>
+						</li>
+					</ul>
+					<ul>
+						<li>0000001</li>
+						<li>
+							<a href="#">小米(MI)Air 12.5英寸全金属超轻薄笔记本(Core M-7Y30 4G 128G固态硬盘 全高清屏 背光键盘 Win10)银</a>
+							</br>
+							<span class="spec">规格:12.5寸银色 128g</span>
+							<span class="num">数量:1</span>
+							<span class="num">单价:￥4999.00</span>
+							<span class="sum">总价:￥4999.00</span>
+						</li>
+					</ul>
+					<ul>
+						<li>0000001</li>
+						<li>
+							<a href="#">小米(MI)Air 12.5英寸全金属超轻薄笔记本(Core M-7Y30 4G 128G固态硬盘 全高清屏 背光键盘 Win10)银</a>
+							</br>
+							<span class="spec">规格:12.5寸银色 128g</span>
+							<span class="num">数量:1</span>
+							<span class="num">单价:￥4999.00</span>
+							<span class="sum">总价:￥4999.00</span>
+						</li>
+					</ul>
+					<ul>
+						<li>0000001</li>
+						<li>
+							<a href="#">小米(MI)Air 12.5英寸全金属超轻薄笔记本(Core M-7Y30 4G 128G固态硬盘 全高清屏 背光键盘 Win10)银</a>
+							</br>
+							<span class="spec">规格:12.5寸银色 128g</span>
+							<span class="num">数量:1</span>
+							<span class="num">单价:￥4999.00</span>
+							<span class="sum">总价:￥4999.00</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="general floor">
+			<div class="g_top">通用设置</div>
+			<table class="site">
+				<thead>
+					<tr>
+						<th colspan="3" align="left">收货地址</th>
+						<th colspan="3" align="right"><a href="#">新增</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>收件人</td>
+						<td>所在区域</td>
+						<td>详细地址</td>
+						<td>邮编</td>
+						<td>联系电话</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+					<tr>
+						<td>123456</td>
+						<td>广东省 广州市 天河区 兴华街道</td>
+						<td>广州大道北963号</td>
+						<td>510510</td>
+						<td>13535242254</td>
+						<td><a href="#">修改</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="user_detail">
+				<thead>
+					<tr>
+						<th align="left">个人资料</th>
+						<th align="right"><a href="#" class="up_user">修改</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>真实姓名</td>
+						<td class="name"></td>
+					</tr>
+					<tr>
+						<td>性别</td>
+						<td class="sex"></td>
+					</tr>
+					<tr>
+						<td>出生时间</td>
+						<td class="birth"></td>
+					</tr>
+					<tr>
+						<td>现居住地</td>
+						<td class="work"></td>
+					</tr>
+					<tr>
+						<td>家乡</td>
+						<td class="home"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="secure floor">
+			<div class="s_top">安全设置</div>
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">详细</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>安全邮箱</td>
+						<td>123456@qq.com</td>
+						<td><a href="#">修改</a></td>
+					</tr>
+					<tr>
+						<td>手机</td>
+						<td>13068240601</td>
+						<td><a href="#">修改</a></td>
+					</tr>
+					<tr>
+						<td>身份证号码</td>
+						<td>44****************57</td>
+						<td><a href="#">修改</a></td>
+					</tr>
+					<tr>
+						<td>登陆密码</td>
+						<td>123**********456</td>
+						<td><a href="#">修改</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="go_top_box"></div>
+	<div class="footer"></div>
+</body>
+<script>
+$(".header").load("header.html",function(){});
+$("#go_top_box").load("go_top.html");
+$(".footer").load("footer.html",function(){});
+</script>
+<script src="../js/userCenter.js"></script>
+</html>

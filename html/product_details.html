@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="stylesheet" href="../css/product_details.css">
+</head>
+<script src="../js/jquery-3.js"></script>
+<body>
+	<div id="header"></div>
+	<div id="product-details" class="product-details">
+		<div id="preview" class="preview">
+	        <div id="mediumDiv" class="mediumDiv">
+				<img id="mImg" src="../img/product/md/584b5678Nbc9f1e70.jpg">
+				<div id="mask" class="mask"></div>
+				<div id="superMask" class="superMask"></div>
+	        </div>
+	        <div id="largeDiv" class="largeDiv"></div>
+	        <h1>
+				<a class="backward"><</a>
+				<div class="ulbox">
+					<ul id="icon_list">
+						<!-- <li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="i1"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li> -->
+					</ul>
+				</div>
+				<a class="forward">></a>
+	        </h1>
+	    </div>
+		<div id="show-details" class="show-details">
+	        <!-- <h1>Apple MacBook Air 13.3英寸笔记本 银色(Core i5 处理器/8GB内存/128GB SSD闪存 MMGF2CH/A)</h1>
+	        <h3>
+				<a href="javascript:;">5月焕新季，领券买新机！神券满6000减600！一体成型金属机身，纤薄轻巧，长达12小时续航</a>
+	        </h3>
+	        <div class="price-promise">
+				<div class="price">
+					<b>零售价：</b>
+					<span>￥6688</span>
+				</div>
+				<div class="promise">
+					<b>服务承诺：</b>
+				</div>
+	        </div>
+	        <p class="parameter">
+				<b>客服：</b>
+				<a href="#"><span>联系客服</span></a>
+	        </p>
+	        <div class="spec clear">
+				<p>规格：</p>
+				<div>
+					<a href="product-details.html?lid=${laptop.lid}" class=${
+					  laptop.lid===details.lid?"active":""
+					}>i5双核/8G内存/128G固态</a>
+					<a href="product-details.html?lid=${laptop.lid}" class=${
+					  laptop.lid===details.lid?"active":""
+					}>i5双核/8G内存/128G固态</a>
+					<a href="product-details.html?lid=${laptop.lid}" class=${
+					  laptop.lid===details.lid?"active":""
+					}>i5双核/8G内存/128G固态</a>
+					<a href="product-details.html?lid=${laptop.lid}" class=${
+					  laptop.lid===details.lid?"active":""
+					}>i5双核/8G内存/128G固态</a>
+				</div>
+	        </div>
+	        <p class="account">
+				<span>数量：</span>
+				<button class="number-reduce">-</button>
+				<input type="text" value="1">
+				<button class="number-add">+</button>
+	        </p>
+	        <div class="shops">
+				<a href="javascript:;" class="buy">立即购买</a>
+				<a href="javascript:;" class="cart">
+					<img src="" alt="">
+					加入购物车
+				</a>
+				<a href="javascript:;" class="collection">
+					收藏
+				</a>
+	        </div> -->
+	    </div>
+		<!--<div class="details_pic"></div>-->
+	</div>
+	<div id="footer"></div>
+</body>
+	<script>
+		$("#footer").load("footer.html",function(){});
+		$("#header").load("header.html",function(){});
+	</script>
+	<script src="../js/product_details.js"></script>
+</html>

@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	/*border: 1px solid black;*/
+}
+.main>.top_nav{
+	position: absolute;
+	width: 1200px;
+}
+.main>.top_nav>ul{
+	width: 1200px;
+	height: 50px;
+	background-color: #16AAF2;
+	overflow: hidden;
+}
+.main .top_nav.fixed{
+	position: fixed;
+	z-index: 30;
+	top: 0;
+}
+.top_nav>ul>li{
+	width: 200px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.top_nav>ul>li>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	color: #fff;
+}
+.top_nav>ul>li:hover{
+	background-color: rgba(255,255,255,0.5);
+	color: black;
+}
+.top_nav>ul>li.hover{
+	background-color: rgba(255,255,255,0.5);
+	color: black;
+}
+.main>.userHome{
+	width: 1200px;
+	margin-top: 50px;
+	/*display: flex;
+	justify-content: center;*/
+	/*border: 1px solid black;*/
+}
+.home_top{
+	position: relative;
+	width: 500px;
+	height: 200px;
+	margin: 10px 0 10px 10px;
+	overflow: hidden;
+	/*border: 1px solid black;*/
+}
+.home_top .change{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	z-index: 10;
+}
+.home_top .change img{
+	width: 100%;
+	height: 100%;
+}
+.home_top>.photo{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border-radius: 100px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.home_top>.photo>img{
+	width: 100%;
+	height: 100%;
+}
+.user_info .nickname,.user_info .user_rank,.user_info .user_sign{
+	position: relative;
+	height: 50px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	color: black;
+	line-height: 50px;
+	/*border: 1px solid black;*/
+}
+.user_info span{
+	color: black;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.mask .home_update{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin: -125px 0 0 -125px;
+	background-color: rgba(22,170,242,0.5);
+	border-radius: 5px;
+	display: none;
+}
+.mask .site_update{
+	display: none;
+}
+.home_update p{
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.home_update form p:last-child input{
+	display: block;
+	width: 80px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 15px;
+	background-color: #fff;
+	color: #16aaf2;
+}
+.home_update p:last-child{
+	text-align: center;
+}
+.home_update span{
+	color: black;
+}
+.home_update input,.home_update textarea{
+	outline: none;
+	border: none;
+}
+.home_update p:last-child input{
+	margin-left: 20px;
+}
+.home_update p:nth-child(2) input{
+	margin-left: 5px;
+	height: 25px;
+}
+.home_update textarea{
+	resize: none;
+}
+.indent{
+	width: 1200px;
+	margin-top: 10px;
+}
+.indent_top {
+	width: 1200px;
+	height: 30px;
+	position: relative;
+	border: 1px solid black;
+	border-bottom: none;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.indent_top h3{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: black;
+	float: left;
+}
+.indent_top h4{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.indent_title,.indent_info ul{
+	width: 1200px;
+	overflow: hidden;
+}
+.indent_title li,.indent_info li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.indent_title li:first-child,.indent_info li:first-child{
+	width: 100px;
+	text-align: center;
+}
+.indent_title li:last-child,.indent_info li:last-child{
+	width: 1100px;
+	border-left: none;
+	padding-left: 10px;
+}
+.indent_info li:first-child{
+	border-top: none;
+	height: 50px;
+	line-height: 50px;
+}
+.indent_info li:last-child{
+	border-top: none;
+	height: 50px;
+	line-height: 25px;
+}
+.indent_info li span{
+	color: #aaa;
+}
+.general{
+	width: 1200px;
+	overflow: hidden;
+}
+.general .g_top,.secure .s_top{
+	width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	border-bottom: none;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.general table{
+	width: 1200px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.general table thead th{
+	padding: 0 10px 0 10px;
+}
+.general table tbody td{
+	border: 1px solid black;
+	text-align: center;
+}
+.general .user_detail{
+	border-top: none;
+}
+.secure table{
+	width: 1200px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.secure table td{
+	border: 1px solid black;
+	text-align: center;
+}
+.user_detail_updata .u_list{
+	position: absolute;
+	width: 480px;
+	height: 280px;
+	top: 50%;
+	left: 50%;
+	margin: -140px 0 0 -225px;
+	background-color: rgba(22,170,242,0.5);
+	display: none;
+}
+.u_list tr:nth-child(1),.u_list tr:nth-child(2),.u_list tr:nth-child(3){
+	height: 30px;
+}
+.u_list tr:last-child td{
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+.u_list tr:last-child td button{
+	width: 80px;
+	height: 30px;
+	margin-left: 30px;
+	background-color: #fff;
+	color: #16aaf2;
+	border: 0;
+}
+.u_list tr td:nth-child(1){
+	width: 80px;
+	padding-left: 10px;
+}
+/* .u_list tr td:nth-child(2){
+	text-align: center;
+} */
+
+
+

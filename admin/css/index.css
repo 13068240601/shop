@@ -1,0 +1,230 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	/*border: 1px solid black;*/
+}
+.main .left_nav{
+	width: 15%;
+	background-color: #2A3F54;
+	float: left;
+	/*border: 1px solid black;*/
+}
+.main>.left_nav>h2{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+}
+.main .left_nav .root_photo{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.main .left_nav .root_photo img{
+	width: 100%;
+	height: 100%;
+}
+.left_nav .main_menu{
+	overflow: hidden;
+	/*border: 1px solid black;*/
+}
+.left_nav .main_menu>div{
+	/*border: 1px solid black;*/
+	float: left;
+}
+.left_nav .main_menu a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	height: 30px;
+	text-align: left;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.nav>li>a{
+	padding-left: 20px;
+}
+.nav>li>ul>li>a{
+	padding-left: 40px;
+}
+.main_menu h3{
+	width: 200px;
+	height: 30px;
+	text-align: left;
+	line-height: 30px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.menu_section>ul{
+	width: 200px;
+	overflow: hidden;
+}
+.menu_section li{
+	list-style: none;
+}
+.menu_section .nav>li{
+	float: left;
+	width: 200px;
+	height: 30px;
+	overflow: hidden;
+	transition: all 0.5s;
+	box-sizing: border-box;
+}
+.menu_section .nav>li.active>ul{
+	border-right: 5px solid green;
+}
+.menu_section .nav>li.active>a{
+	border-radius: 2px;
+	border:#35a5e5 1px solid;
+	box-shadow: 0 0 1px rgba(81, 203, 238, 1) inset;
+}
+.menu_section .nav>li>ul{
+	overflow: hidden;
+}
+.menu_section .nav>li>ul a:hover{
+	background-color: #495D70;
+}
+.menu_section .nav>li>ul>li{
+	float: left;
+}
+.top_nav{
+	width: 85%;
+	height: 50px;
+	overflow: hidden;
+	background-color: #EDEDED;
+}
+.top_nav ul{
+	width: 200px;
+	height: 50px;
+	float: right;
+	overflow: hidden;
+}
+.top_nav ul li{
+	width: 100px;
+	height: 50px;
+	float: left;
+	list-style: none;
+}
+.top_nav ul li a{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+.search_num{
+	width: 85%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: #ddd;
+}
+.search_num .num{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.search_num .search{
+	width: 200px;
+	height: 30px;
+}
+.search_num .search input{
+	width: 200px;
+	height: 30px;
+	outline: none;
+	box-sizing: border-box;
+}
+.page_num{
+	margin-top: 10px;
+	width: 300px;
+	height: 30px;
+	float: right;
+}
+.page_num ul li{
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	float: left;
+	border: 1px solid gray;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.page_num ul li:not(:first-child){
+	border-left: none;
+}
+.page_num ul li:first-child{
+	border-radius: 5px 0 0 5px;
+}
+.page_num ul li:last-child{
+	border-radius: 0 5px 5px 0;
+}
+.page_num ul .up_box,.page_num ul .next_box{
+	width: 80px;
+}
+.page_num ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page_num ul li a.active{
+	background-color: #337AB7;
+}
+.details table{
+	width: 85%;
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+.details table tr,.details table td,.details table th{
+	border: 1px solid gray;
+}
+.details table tbody tr td{
+	text-align: center;
+}
+.update_price{
+	position: fixed;
+	width: 200px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -75px;
+	background-color: #2A3F54;
+	display: none;
+}
+.update_price p{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	overflow: hidden;
+}
+.update_price p button{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+
+

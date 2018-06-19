@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="main">
+		<div class="left_nav">
+			<h2>XX商城后台</h2>
+			<div class="root_photo">
+				<img src="../img/userPhoto/34.jpg" alt="">
+			</div>
+			<div id="sidebar-menu" class="main_menu">
+                <div class="menu_section">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">后台首页</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_section">
+                 	<h3>数据管理</h3>
+                    <ul class="nav">
+                        <li><a href="#" class="t_btn">商品管理</a>
+                        	<ul>
+                        		<li><a href="#product_details">商品列表</a></li>
+                        		<li><a href="#">多条件查询</a></li>
+                        		<li><a href="#">添加商品</a></li>
+                        	</ul>
+                        </li>
+                        <li><a href="#" class="t_btn">用户管理</a>
+                        	<ul>
+                        		<li><a href="#">用户列表</a></li>
+                        		<li><a href="#">用户检索</a></li>
+                        	</ul>
+                        </li>
+                        <li><a href="#" class="t_btn">订单管理</a>
+                        	<ul>
+                        		<li><a href="#">订单列表</a></li>
+                        		<li><a href="#">订单搜索</a></li>
+                        	</ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_section">
+                 	<h3>内容管理</h3>
+                    <ul class="nav">
+                        <li><a href="#" class="t_btn">首页商品管理</a>
+                        	<ul>
+                        		<li><a href="#">轮播广告</a></li>
+                        		<li><a href="#">今日推荐</a></li>
+                        		<li><a href="#">优惠活动</a></li>
+                        	</ul>
+                        </li>
+                        <li><a href="#" class="t_btn">功能页面</a>
+                        	<ul>
+                        		<li><a href="#">403错误页面</a></li>
+                        		<li><a href="#">404错误页面</a></li>
+                        		<li><a href="#">500错误页面</a></li>
+                        	</ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<div class="top_nav">
+			<ul>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</div>
+		<div id="index">
+			<div id="product_details">
+				<div class="search_num">
+					<div class="num">
+						每页显示条数
+						<select name="select" id="select">
+							<option value="6">6</option>
+							<option value="8">8</option>
+							<option value="10">10</option>
+							<option value="12">12</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+					<div class="search">
+						<input type="text" id="key" placeholder="请输入关键字">
+					</div>
+				</div>
+				<div class="details">
+					<table>
+						<thead>
+							<tr>
+								<th>全选 <input type="checkbox"> </th>
+								<th>编号</th>
+								<th>图片</th>
+								<th>型号</th>
+								<th>主标题</th>
+								<th>规格</th>
+								<th>单价</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody id="details_list">
+							<!-- <tr>
+								<td><input type="checkbox"></td>
+								<td>0001</td>
+								<td>图片</td>
+								<td>Apple Air 2015</td>
+								<td>主标题</td>
+								<td>规格</td>
+								<td>￥7899</td>
+								<td>
+									<a href="#" class="btn_update">修改</a>
+									<a href="#" class="btn_del">删除</a>
+								</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				<div class="page_num">
+					<ul>
+						<!-- <li><a href="#">上一页</a></li>
+						<li><a href="#" class="active">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">下一页</a></li> -->
+					</ul>
+				</div>
+				<div class="update_price">
+					<p class="title">修改id为x的商品价格</p>
+					<p>￥: <input type="text" class="price"></p>
+					<p>
+						<button class="update">修改</button>
+						<button class="close">关闭</button>
+					</p>
+				</div>
+			</div>
+			<div class="product_search">
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/details.js"></script>
+</html>

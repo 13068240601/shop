@@ -1,0 +1,139 @@
+.header{
+	position: relative;
+	width: 100%;
+	height: 120px;
+	line-height: 30px;
+	background-color: #fff;
+}
+.header-main{
+	width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	z-index: 10;
+}
+.header-main a:hover{
+	color: #16AAF2;
+}
+.header-left{
+	position: relative;
+	float: left;
+}
+.header-left-main li,.header-right-main li{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+}
+.header-left-main li a,.header-right-main li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.header-left-main li{
+	float: left;
+}
+.mgl10{
+	margin-left: 10px;
+}
+.region{
+	appearance: none; /*隐藏下拉箭头*/
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+/*去掉轮廓*/
+body:hover .region,body:hover input{
+	outline: none;
+}
+
+/*IE浏览器去掉下拉箭头*/
+select::-ms-expand{
+	display: none;
+}
+.header-main li:hover{
+	background-color: #f5f5f5;
+	font-color: red;
+}
+.header-right{
+	position: relative;
+	margin-right: 5%;
+	float: right;
+}
+.header-right-list{
+	float: left;
+}
+.header-right ul li .user,.header-right ul li .collection{
+	position: absolute;
+	background-color: #fff;
+	z-index: 10;
+}
+.user,.collection{
+	width: 100px;
+	height: 30px;
+	overflow: hidden;
+}
+.user:hover,.collection:hover{
+	width: 100px;
+	height: 90px;
+	transition: 0.5s;
+}
+.header-search-logo{
+	position: relative;
+	width: 1200px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto 0 auto;
+	/*border: 1px solid black;*/
+}
+.logo-search-container{
+	position: relative;
+	width: 750px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+	/*vertical-align: middle;*/
+	margin: auto;
+	/*border: 1px solid black;*/ 
+}
+.header-logo{
+	position: relative;
+	width: 250px;
+	height: 100px;
+	float: left;
+	/*border: 1px solid black;*/
+}
+.header-logo img{
+	width: 100%;
+	height: 100%;
+}
+.search-right{
+	position: relative;
+	width: 500px;
+	height: 50px;
+	margin-left: 50px;
+	/*border: 1px solid black;*/
+}
+.search-text{
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	border: 1px solid #16AAF2;
+	box-sizing: border-box;
+}
+.search-btn{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	border: 0;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	font-family: "宋体";
+	color: #fff;
+	background-color: #16AAF2;
+}

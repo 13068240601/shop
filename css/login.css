@@ -1,0 +1,113 @@
+.login-boxtitle{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+.login-banner{
+    width: 100%;
+    height: 500px;
+    background-color: #27A9E3;
+}
+.banner-main{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.login-box{
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+}
+.login-box p{
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.login-box div{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+}
+.login-box div:not(:first-child){
+    margin-top: 10px;
+}
+.login-box .ckeck{
+    width: 300px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.login-box input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+    border: 1px solid #DCDEE0;
+    -moz-border: 1px solid #DCDEE0;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0);
+}
+.login-box input[type="text"],input[type="password"]{
+    padding-right: 50px;
+}
+.login-box input[id="authcode"]{
+    width: 220px;
+    float: left;
+}
+.login-box input[id="btn_login"]{
+    border: none;
+    font-size: 20px;
+    background-color: #27A9E3;
+    box-sizing: border-box;
+}
+.login-box input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-left: 20px
+}
+.login-box .uname i,.upwd i{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.login-box .uname i{
+    background: url(../img/user.png) no-repeat;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+}
+.login-box .upwd i{
+    background: url(../img/pwd.png) no-repeat;
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+}
+.login-box .third_party_box{
+    width: 300px;
+    height: 80px;
+}
+.third_party{
+    width: 300px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.third_party img{
+    width: 50px;
+    float: left;
+}
+.login-box .register{
+    width: 80px;
+    height: 20px;
+    float: right;
+    margin-right: 50px;

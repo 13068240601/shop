@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理中心</title>
+     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-boxtitle"></div>
+    <div class="login-banner">
+        <div class="banner-main">
+            <div class="login-banner-bg"></div>
+            <div class="login-box">
+                <p>登录商城</p>
+                <form action="#">
+                    <div class="uname">
+                        <input type="text" placeholder="请输入手机号码或邮箱" id="uname">
+                        <i></i>
+
+                    </div>
+                    <div class="upwd">
+                        <input type="password" placeholder="请输入密码" id="upwd">
+                        <i></i>
+                    </div>
+                    <div class="authcode">
+                        <input type="text" placeholder="请输入验证码" id="authcode">
+                        <img src="../php/authcode.php" alt="" onclick="this.src='../php/authcode.php?'+Math.random();">
+                    </div>
+                    <div class="ckeck">
+                        <input type="checkbox">
+                        <span>记住密码</span>
+                        <input type="checkbox">
+                        <span>自动登录</span>
+                    </div>
+                    <div class="btn">
+                        <input id="btn_login" type="button" value="登录">
+                    </div>
+                    <div class="third_party_box">
+                        <h1>第三方账号登录</h1>
+                        <div class="third_party">
+                            <img src="../img/qq.png" alt="">
+                            <img src="../img/wechar.png" alt="">
+                            <img src="../img/zhifubao.png" alt="">
+                            <img src="../img/weibo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="register">
+                        <a href="register.html">新用户注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/login.js"></script>
+</html>

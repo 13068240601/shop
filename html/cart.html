@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/cart.css">
+</head>
+<script src="../js/jquery-3.js"></script>
+<body>
+	<div id="header"></div>
+	<div class="main">
+		<div class="top-box">
+			<ul class="top-list">
+				<li><input type="checkbox" id="Allcheck">全选</li>
+				<li>商品信息</li>
+				<li>规格</li>
+				<li>数量</li>
+				<li>价格</li>
+				<li>小计</li>
+				<li>操作</li>
+			</ul>
+		</div>
+		<div class="cart-box">
+			<!-- <ul class="cart-list">
+				<li><input type="checkbox"></li>
+				<li>
+					<p>Apple MacBook Air 13.3英寸笔记本 银色(Core i5 处理器/8GB内存/128GB SSD闪存 MMGF2CH/A)</p>
+				</li>
+				<li>双核i5/8GB内存/128GB闪存</li>
+				<li class="number-box">
+					<a href="#">-</a>
+					<input type="text" class="number" id="number">
+					<a href="#">+</a>
+				</li>
+				<li>￥99999</li>
+				<li>￥999999</li>
+				<li>删除</li>
+			</ul> -->
+		</div>
+		<div class="bottom-box">
+			<div class="operate">
+				<ul class="operate-list">
+					<li><a href="#" class="deleteAll">批量删除</a></li>
+					<li><b class="total"><!-- 合计:￥9999.00 --></b></li>
+					<li><a href="#">结算</a></li>
+				</ul>
+			</div>
+			<!-- <ul class="btn-list">
+				<li ><a href="#">上一页</a></li>
+				<li><a href="#">1</a></li>
+				<li class="active"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">下一页</a></li>
+			</ul> -->
+		</div>
+	</div>
+	<div id="go_top_box"></div>
+	<div id="footer"></div>
+</body>
+<script>
+$("#header").load("header.html",function(){});
+$("#go_top_box").load("go_top.html");
+$("#footer").load("footer.html",function(){});
+</script>
+<script src="../js/loadcart.js"></script>
+</html>

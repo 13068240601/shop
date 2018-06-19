@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="../css/go_top.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<div class="go_top fa fa-arrow-up fa-3x" id="go_top_btn">
+</div>
+<script>
+	window.onscroll = function () {
+		this.gt = document.getElementById("go_top_btn");
+		this.btop = document.body.scrollTop || document.documentElement.scrollTop;
+		if (this.btop > 100) {
+			this.gt.style.display = "block";
+		} else {
+			this.gt.style.display = "none";
+		}
+		this.gt.onclick = function () {
+			$("body,html").animate({ scrollTop: 0 }, 500);
+		}
+	}
+</script>
